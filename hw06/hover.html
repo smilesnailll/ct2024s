@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <img src="hw06\src\compare_plot\result.png" height="150" width="150">
+    <img src="hw06\src\yang\112C71014.jpg" height="150" width="150">
     <script>
         // 设定SVG大小
         var margin = {top: 10, right: 30, bottom: 30, left: 60},
@@ -36,7 +36,7 @@
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         // 加载CSV数据
-        d3.csv("src/upload_csv/hsieh.csv").then(function(data) {
+        d3.csv("src/upload_csv/yang.csv").then(function(data) {
 
             // 设置X轴比例尺
             var x = d3.scaleLinear()
@@ -77,7 +77,7 @@
                 .text("LPIPS");
 
             var filteredData = data.filter(function(d) {
-                return d.SSIM >= 0.45 && d.SSIM <= 0.65 && d.LPIPS >= 0.35 && d.LPIPS <= 0.60;
+                return d.SSIM >= 0.75 && d.SSIM <= 0.95 && d.LPIPS >= 0.20 && d.LPIPS <= 045;
             });
 
             // 创建散点
@@ -102,7 +102,7 @@
                     tooltip.transition()
                         .duration(200)
                         .style("opacity", .9);
-                    tooltip.html("<img src='src/hsieh/" + d.Student + "' alt='Handwriting' width='120' height='120'>")
+                    tooltip.html("<img src='src/yang/" + d.Student + "' alt='Handwriting' width='120' height='120'>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
                 })
