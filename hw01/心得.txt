@@ -1,0 +1,5 @@
+這次作業是在 VS Code 中顯示下載好的兩個特殊字體: Fira Code、DiaPro。
+我覺得 Fira Code 以英文字體來說是蠻好看的，DiaPro 是日本火車時刻表的字體，也蠻特別的。
+這次的作業讓我更加熟悉了VS Code的設置，特別是對於'User Settings'和'Workspace Settings'的理解。
+也讓我更加熟悉了VS Code的設置，特別是對於'User Settings'和'Workspace Settings'的理解。
+通過適當的設置，能更有效地管理不同專案的字體和其他設置，提高了工作效率。
